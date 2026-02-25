@@ -1,0 +1,38 @@
+{
+  "name": "django-tools",
+  "displayName": "Django Development Tools",
+  "description": "Django/DRF development tools including test fixtures and access auditing",
+  "version": "1.0.0",
+  "author": {
+    "name": "OnDefend",
+    "email": "dev@ondefend.com"
+  },
+  "skills": [
+    {
+      "name": "customer-access-audit",
+      "path": "./skills/customer-access-audit"
+    },
+    {
+      "name": "django-test-fixture",
+      "path": "./skills/django-test-fixture"
+    }
+  ],
+  "rules": [
+    {
+      "path": "./rules/django-patterns.md",
+      "paths": ["**/apps/**/*.py", "**/tests/**/*.py"]
+    }
+  ],
+  "settings": {
+    "permissions": {
+      "allow": [
+        "Bash(python -m pytest *)",
+        "Bash(python manage.py *)",
+        "Read(apps/**)",
+        "Edit(apps/**)",
+        "Read(tests/**)",
+        "Edit(tests/**)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "ondefend-claude-config",
+  "displayName": "OnDefend Claude Code Configuration",
+  "description": "Shared Claude Code plugins, skills, and configurations for the OnDefend team",
+  "owner": {
+    "name": "OnDefend",
+    "email": "dev@ondefend.com"
+  },
+  "plugins": [
+    {
+      "name": "blindspot-core",
+      "source": "./plugins/blindspot-core",
+      "description": "Core Blindspot conventions, Context7 integration, and git rules",
+      "version": "1.0.0"
+    },
+    {
+      "name": "django-tools",
+      "source": "./plugins/django-tools",
+      "description": "Django/DRF development tools including test fixtures and access auditing",
+      "version": "1.0.0"
+    },
+    {
+      "name": "react-tools",
+      "source": "./plugins/react-tools",
+      "description": "React/MUI component scaffolding tools",
+      "version": "1.0.0"
+    },
+    {
+      "name": "fastapi-tools",
+      "source": "./plugins/fastapi-tools",
+      "description": "FastAPI gateway endpoint generation tools",
+      "version": "1.0.0"
+    },
+    {
+      "name": "e2e-testing",
+      "source": "./plugins/e2e-testing",
+      "description": "Playwright E2E test generation tools",
+      "version": "1.0.0"
+    }
+  ]
+}

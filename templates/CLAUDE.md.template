@@ -1,0 +1,67 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code when working with code in this repository.
+
+## Git Commit Rules
+
+- **NEVER include Claude or AI attribution in commit messages** (no Co-Authored-By, no mentions of Claude/AI)
+- Keep commit messages concise and descriptive of the changes
+
+## MANDATORY: Context7 MCP Usage
+
+**THIS IS A REQUIRED BEHAVIOR - NOT OPTIONAL**
+
+You MUST automatically use Context7 MCP tools whenever you are:
+- **Generating code** that uses any library or framework
+- **Writing setup/configuration** steps for dependencies
+- **Looking up library/API documentation** or syntax
+- **Debugging** library-related issues
+- **Implementing patterns** specific to a library
+
+### Required Workflow
+
+1. **Identify the library** being used
+2. **Automatically call** `mcp__plugin_context7_context7__resolve-library-id` with the library name
+3. **Fetch documentation** with `mcp__plugin_context7_context7__query-docs` using the resolved ID
+4. **Use the documentation** to write accurate, current code
+
+## Project Overview
+
+<!-- Describe your project here -->
+
+| Component | Technology | Purpose | Port |
+|-----------|------------|---------|------|
+| **Component1** | Tech | Purpose | Port |
+
+## Common Commands
+
+```bash
+# Build
+npm run build
+
+# Test
+npm test
+
+# Run
+npm run dev
+```
+
+## Key Patterns
+
+<!-- Document non-obvious patterns specific to your project -->
+
+## Environment Variables
+
+<!-- List required environment variables -->
+
+## Tech Stack
+
+**Backend**: <!-- List backend technologies -->
+
+**Frontend**: <!-- List frontend technologies -->
+
+## Custom Skills
+
+The following custom skills are available:
+
+- `/skill-name` - Description

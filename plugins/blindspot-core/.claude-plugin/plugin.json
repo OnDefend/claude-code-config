@@ -1,0 +1,36 @@
+{
+  "name": "blindspot-core",
+  "displayName": "Blindspot Core",
+  "description": "Core Blindspot conventions, Context7 integration, and git rules",
+  "version": "1.0.0",
+  "author": {
+    "name": "OnDefend",
+    "email": "dev@ondefend.com"
+  },
+  "skills": [
+    {
+      "name": "context7-workflow",
+      "path": "./skills/context7-workflow"
+    }
+  ],
+  "rules": [
+    {
+      "path": "./rules/git-rules.md"
+    },
+    {
+      "path": "./rules/context7-mandatory.md"
+    },
+    {
+      "path": "./rules/code-style.md"
+    }
+  ],
+  "settings": {
+    "permissions": {
+      "allow": [
+        "mcp__plugin_context7_context7__resolve-library-id",
+        "mcp__plugin_context7_context7__query-docs",
+        "WebSearch"
+      ]
+    }
+  }
+}

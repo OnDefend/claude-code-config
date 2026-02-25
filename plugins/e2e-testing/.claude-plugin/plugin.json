@@ -1,0 +1,31 @@
+{
+  "name": "e2e-testing",
+  "displayName": "E2E Testing Tools",
+  "description": "Playwright E2E test generation tools",
+  "version": "1.0.0",
+  "author": {
+    "name": "OnDefend",
+    "email": "dev@ondefend.com"
+  },
+  "skills": [
+    {
+      "name": "e2e-test",
+      "path": "./skills/e2e-test"
+    }
+  ],
+  "rules": [
+    {
+      "path": "./rules/playwright-patterns.md",
+      "paths": ["**/e2e/**/*.ts", "**/e2e/**/*.spec.ts"]
+    }
+  ],
+  "settings": {
+    "permissions": {
+      "allow": [
+        "Bash(npx playwright *)",
+        "Read(e2e/**)",
+        "Edit(e2e/**)"
+      ]
+    }
+  }
+}

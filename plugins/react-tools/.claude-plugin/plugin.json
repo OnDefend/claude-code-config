@@ -1,0 +1,32 @@
+{
+  "name": "react-tools",
+  "displayName": "React Development Tools",
+  "description": "React/MUI component scaffolding tools for BlindspotWeb",
+  "version": "1.0.0",
+  "author": {
+    "name": "OnDefend",
+    "email": "dev@ondefend.com"
+  },
+  "skills": [
+    {
+      "name": "react-component",
+      "path": "./skills/react-component"
+    }
+  ],
+  "rules": [
+    {
+      "path": "./rules/react-patterns.md",
+      "paths": ["**/src/**/*.jsx", "**/src/**/*.tsx", "**/src/**/*.js"]
+    }
+  ],
+  "settings": {
+    "permissions": {
+      "allow": [
+        "Bash(npm *)",
+        "Bash(npx *)",
+        "Read(src/**)",
+        "Edit(src/**)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(npm *)",
+      "Bash(npx *)",
+      "Bash(python -m pytest *)",
+      "Read(package.json)",
+      "Read(requirements.txt)",
+      "Read(*.md)",
+      "WebSearch",
+      "mcp__plugin_context7_context7__*"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(**/secrets/**)",
+      "Read(**/*.key)",
+      "Read(**/*credentials*)",
+      "Bash(rm -rf /)",
+      "Bash(rm -rf ~)",
+      "Bash(git push --force origin main)",
+      "Bash(git push --force origin master)"
+    ],
+    "ask": [
+      "Bash(git push --force *)",
+      "Bash(docker rm *)"
+    ]
+  },
+  "extraKnownMarketplaces": {
+    "ondefend": {
+      "source": {
+        "source": "github",
+        "repo": "OnDefend/claude-code-config"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "blindspot-core@ondefend": true
+  }
+}

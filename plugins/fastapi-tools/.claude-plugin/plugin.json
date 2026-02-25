@@ -1,0 +1,31 @@
+{
+  "name": "fastapi-tools",
+  "displayName": "FastAPI Development Tools",
+  "description": "FastAPI gateway endpoint generation tools",
+  "version": "1.0.0",
+  "author": {
+    "name": "OnDefend",
+    "email": "dev@ondefend.com"
+  },
+  "skills": [
+    {
+      "name": "fastapi-endpoint",
+      "path": "./skills/fastapi-endpoint"
+    }
+  ],
+  "rules": [
+    {
+      "path": "./rules/fastapi-patterns.md",
+      "paths": ["**/app/**/*.py"]
+    }
+  ],
+  "settings": {
+    "permissions": {
+      "allow": [
+        "Bash(uvicorn *)",
+        "Read(app/**)",
+        "Edit(app/**)"
+      ]
+    }
+  }
+}
